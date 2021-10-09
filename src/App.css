@@ -1,38 +1,391 @@
-.App {
+
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.Topbar{
+  margin-bottom: 5px;
+  background-color: #f1f1f1;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100% !important;
+position: fixed;
+left: 0;
+ z-index: 999;
+
+
+  
+}
+/* ////********************** Drawer */
+.MenuIcon{
+font-size: 30px !important;
+  color:teal;
+  margin-right:10px;
+  display:none !important;
+}
+
+.DrawerList{
+  width: 250px;
+  height:100vh;
+  background-color: lightgray;
+ 
+}
+.DrawerItem{
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: teal;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 3px;
+  
+
+}
+.drawerIcon{
+  font-size: 40px !important;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+.DrawerItem:hover{
+  background-color: teal;
+  color: white;
+  border: none;
+  
+  border-radius: 5px;
+transform: scale(1.03);
+}
+/* ////********************** Drawer end */
+
+.ListGrid{
+  display: flex;
+  justify-content: right;
+  align-items: start;
+}
+.BrandName{
+
+ color: teal;
+ text-transform: uppercase;
+ font-size: 18px;
+ font-weight: 700;
+ font-family: 'Roboto', sans-serif;
+}
+.List{
+  display: flex;
+  margin-left: 3% !important;
+}
+
+.ListItem{
+ width: fit-content !important;
+ padding: 5px 15px !important;
+ margin: 0 5px;
+color: teal;
+text-transform: uppercase;
+font-size: 18px;
+font-weight: 500;
+font-family: 'Roboto', sans-serif;
+}
+
+
+/* ///////////////  HEADER END ///////////////// */
+
+/* /////////// CAROUSEL/////////// */
+.carouselImg{
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+  position: inherit;
+}
+.CarouselText{
+  background-color:rgba(90, 200, 232, 0.8);
+border: 2px solid white;
+color: white;
+font-size: 22px;
+font-weight: 500;
+border-radius: 10px;
+  width: 30%;
+  position: absolute;
+  top:50% !important;
+  left: 30%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.mainSerachSection{
+  padding: 10px 15px;
+
+}
+.searchInput{
+  height: 15px;
+  line-height: 15px;
+  outline:none;
+ background-color: transparent;
+ border: none;
+ border-bottom: 2px solid white;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: teal;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+#Department,#Province{
+  outline:none;
+ background-color: transparent;
+ border: none;
+ border-bottom: 2px solid white;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: Black;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+.depOption{
+ background-color: transparent;
+ border: none !important;
+}
+/* ///////////// Success Jobs ////// */
+.JobContainer{
+  background-color: #f2efef;
+}
+.JobTitle{
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 500 !important;
+  color: teal;
+}
+.MianCard{
+ display: flex;
+ justify-content: space-around;
+  background-color:#f2efef ;
+}
+
+.card{
+  width: 98%;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding:10px 10px 0 10px;
+  min-height: 20vh !important;
+  max-height: 300px;
+
+  border-radius: 7px;
+  margin: 10px !important;
+ 
+}
+
+.carBody{
+
+  font-size: 16px;
+  min-height: 10vh;
+text-align: center !important;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cardText{
+  color: gray;
+}
+.Availjobs{
+  font-size: 30px;
+  text-decoration: underline;
+  color: blue;
+  font-weight: 500;
+}
+
+
+/*  /////// Team Member Start */
+
+
+.Team{
+  background-color: #f2efef;
+}
+.TeamHeading{
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 500 !important;
+  color: teal;
+}
+.Cards{
+ display: flex;
+ justify-content: space-around;
+  background-color:#f2efef ;
+}
+.memberCard:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.memberCard{
+  width: 98%;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  min-height: 20vh !important;
+  max-height: 300px;
+  border-radius: 7px;
+  margin: 10px !important;
+  transition: all 1s;
+ 
+}
+.empAvatar{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  object-fit:cover;
+  border-radius: 50%;
+  padding: 2px;
+}
+.empAvatar:hover{
+ transform: scale(1.2);
+ box-shadow: 2px 2px 1px 2px gray;
+}
+.profileName{
+ color: teal;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+   font-size: 18px;
+   font-weight: 400;
+   padding: 10px 5px 0 5px !important;
+
+}
+
+
+.profileBio{
+
+  min-height: 10vh;
+  color: gray;
+  
+  padding-top: 10px;
+  letter-spacing: 0.1px !important;
+  font-size: 12px;
+  word-wrap: break-word;
+text-orientation: sideways-right;
+
+
+}
+.proffession{
+  font-size: 30px;
+  text-decoration: underline;
+  color: teal;
+  font-weight: 500;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/*  /////// Team Member End */
+/* 8*********************  Data Table  */
+.datatable{
+  background-color: #f2efef;
+  padding: 15px 10px;
+ 
+}
+.tableContainer{
+  background-color: white;
+  border: none;
+  width: 98% !important;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 5px 6px 5px 0px rgba(125, 179, 223, 0.75);
+}
+.tableHeading{
+  color: teal;
+  padding: 10px 0;
+  font-weight: 500 !important ;
+  font-size: 22px !important;
+  letter-spacing: .6px;
+}
+.tableHead{
+  background-color: teal;
+
+}
+.cellHeading{
+  color: white !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+.tableCell{
+  border: 1px solid lightgray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 8*********************  Data Table End  */
+/* footer start  */
+.footer{
+  background-color: teal;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.FooterLogo{
+  height: 50%;
+  width: 50%;
+  padding: 5% 0 0 0 ;
+}
+.footerright{
   color: white;
+  font-size: 17px;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0 0 0 ;
 }
+/* footer start End */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* ////////////// Media Query ////////// */
+@media (max-width:780px){
+  .List{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .MenuIcon{
+    display: block !important;
+  }
+}
+@media(max-width:365px){
+  .ListItem{
+word-wrap: break-word !important;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 15px !important;
+    margin: 0 5px;
+     /* margin: 0 auto !important; */
+   }
+   .carouselImg{
+    width: 100%;
+    height: 60vh;
+  }
+}
+@media(max-width:462px){
+  .ListItem{
+word-wrap: break-word !important;
+   
+    padding: 5px 5px !important;
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 300;
+
+     /* margin: 0 auto !important; */
+   }
+   .carouselImg{
+    width: 100%;
+    height: 70vh;
+  }
+}
+@media(max-width:960px){
+  .BrandName{
+   
+    text-align: center;
   }
 }
